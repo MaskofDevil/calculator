@@ -4,7 +4,7 @@ A simple, cross-platform, desktop calculator app with light & dark mode toggle.
 
 ## Screenshot
 
-
+![calculator](https://user-images.githubusercontent.com/66861616/152196005-78829ef3-c644-4682-90fb-b95f8359e7f1.png)
 
 ##### Project Structure:
 
