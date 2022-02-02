@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: var(--body);
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-bar
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--title-bar);
+    width: 100%;
+}
+
+.title-bar > *
+{
+    padding: 0 0.5rem;
+}
+
+.dropdown
+{
+    height: 2rem;
+    border: 0;
+    outline: none;
+    background: none;
+    color: var(--title-bar-text);
+    cursor: pointer;
+}
+
+.dropdown > *
+{
+    background-color: var(--title-bar);
+}
+
+select
+{
+    -webkit-appearance: none;
+}
+
+.title-bar p
+{
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: var(--title-bar-text);
+    -webkit-app-region: drag;
+}
+
+button
+{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.submenu
+{
+    width: 14rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submenu > *
+{
+    padding: 0.2rem 0.5rem;
+}
+
+.calculator
+{
+    width: 250px;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#display
+{
+    height: 5rem;
+    color: var(--display-text);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: var(--display);
+}
+
+svg
+{
+    color: var(--text);
+}
+
+.buttons
+{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.2rem;
+}
+
+.buttons > *
+{
+    height: 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text);
+    background-color: var(--button);
+}
+
+.buttons > *:hover
+{
+    background-color: var(--button-hover);
+}
+
+.buttons > *::selection
+{
+    user-select: none;
+}
+
+.equal
+{
+    background-color: var(--equal);
+}
+
+.equal:hover
+{
+    background-color: var(--equal-hover);
+}
+
+.cancel
+{
+    background-color: var(--cancel);
+}
+
+.cancel:hover
+{
+    background-color: var(--cancel-hover);
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer p
+{
+    font-size: 0.7rem;
+    color: var(--footer-text);
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: var(--footer-link);
+}
+
+@media (prefers-color-scheme: dark) { 
+    :root
+    {
+        --title-bar: #1e293b;
+        --title-bar-text: white;
+        --text: white;
+        --display: #e2e8f0;
+        --display-text: #334155;
+        --body: #334155;
+        --button: #475569;
+        --button-hover: #64748b;
+        --equal: #84cc16;
+        --equal-hover: #a3e635;
+        --cancel: #ef4444;
+        --cancel-hover: #f87171;
+        --footer-text: #94a3b8;
+        --footer-link: #cbd5e1;
+    }
+}
+  
+@media (prefers-color-scheme: light) {
+    :root
+    {
+        --title-bar: white;
+        --title-bar-text: #334155;
+        --text: #334155;
+        --display: #e2e8f0;
+        --display-text: #334155;
+        --body: white;
+        --button: #f1f5f9;
+        --button-hover: #e2e8f0;
+        --equal: #a3e635;
+        --equal-hover: #84cc16;
+        --cancel: #f87171;
+        --cancel-hover: #ef4444;
+        --footer-text: #94a3b8;
+        --footer-link: #64748b;
+    }
+}

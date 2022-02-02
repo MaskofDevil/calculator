@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A simple calculator app using electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Tuhin Dhar (https://github.com/MaskofDevil)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.7"
+  }
+}
